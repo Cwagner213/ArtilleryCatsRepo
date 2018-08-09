@@ -1,0 +1,705 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.20506</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{8B5AF6EB-E066-0976-8D8F-4C64D3904DA4}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AssemblyName>Assembly-CSharp-Editor-firstpass</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{E097FAD1-6243-4DAD-9C02-E9B9EFC3FFC1};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <TargetFrameworkIdentifier>.NETFramework</TargetFrameworkIdentifier>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Unity Full v3.5</TargetFrameworkProfile>
+    <CompilerResponseFile></CompilerResponseFile>
+    <UnityProjectType>EditorPlugins:7</UnityProjectType>
+    <UnityBuildTarget>StandaloneWindows:5</UnityBuildTarget>
+    <UnityVersion>2017.3.0f3</UnityVersion>
+    <RootNamespace></RootNamespace>
+    <LangVersion>4</LangVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Temp\UnityVS_bin\Debug\</OutputPath>
+    <IntermediateOutputPath>Temp\UnityVS_obj\Debug\</IntermediateOutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DefineConstants>DEBUG;TRACE;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_2017_1_OR_NEWER;UNITY_2017_2_OR_NEWER;UNITY_2017_3_OR_NEWER;UNITY_2017_3_0;UNITY_2017_3;UNITY_2017;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_DUCK_TYPING;ENABLE_GENERICS;ENABLE_PVR_GI;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_SPRITERENDERER_FLIPPING;ENABLE_SPRITES;ENABLE_GRID;ENABLE_TILEMAP;ENABLE_TERRAIN;ENABLE_RAKNET;ENABLE_DIRECTOR;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_COLLAB_SOFTLOCKS;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_USE_WEBREQUEST;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_HUB;ENABLE_EDITOR_HUB_LICENSE;ENABLE_WEBSOCKET_CLIENT;ENABLE_DIRECTOR_AUDIO;ENABLE_DIRECTOR_TEXTURE;ENABLE_TIMELINE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;ENABLE_NATIVE_ARRAY;ENABLE_SPRITE_MASKING;INCLUDE_DYNAMIC_GI;INCLUDE_GI;ENABLE_MONO_BDWGC;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;INCLUDE_PUBNUB;ENABLE_PLAYMODE_TESTS_RUNNER;ENABLE_VIDEO;ENABLE_RMGUI;ENABLE_PACKMAN;ENABLE_CUSTOM_RENDER_TEXTURE;ENABLE_STYLE_SHEETS;ENABLE_LOCALIZATION;PLATFORM_STANDALONE_WIN;PLATFORM_STANDALONE;UNITY_STANDALONE_WIN;UNITY_STANDALONE;ENABLE_SUBSTANCE;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_UNITYWEBREQUEST;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_EVENT_QUEUE;ENABLE_CLUSTERINPUT;ENABLE_VR;ENABLE_AR;ENABLE_WEBSOCKET_HOST;ENABLE_MONO;NET_2_0_SUBSET;ENABLE_PROFILER;DEBUG;TRACE;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;ENABLE_NATIVE_ARRAY_CHECKS;UNITY_TEAM_LICENSE;ENABLE_VSTU;UNITY_PRO_LICENSE</DefineConstants>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Temp\UnityVS_bin\Release\</OutputPath>
+    <IntermediateOutputPath>Temp\UnityVS_obj\Release\</IntermediateOutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DefineConstants>TRACE;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_2017_1_OR_NEWER;UNITY_2017_2_OR_NEWER;UNITY_2017_3_OR_NEWER;UNITY_2017_3_0;UNITY_2017_3;UNITY_2017;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_DUCK_TYPING;ENABLE_GENERICS;ENABLE_PVR_GI;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_SPRITERENDERER_FLIPPING;ENABLE_SPRITES;ENABLE_GRID;ENABLE_TILEMAP;ENABLE_TERRAIN;ENABLE_RAKNET;ENABLE_DIRECTOR;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_COLLAB_SOFTLOCKS;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_USE_WEBREQUEST;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_HUB;ENABLE_EDITOR_HUB_LICENSE;ENABLE_WEBSOCKET_CLIENT;ENABLE_DIRECTOR_AUDIO;ENABLE_DIRECTOR_TEXTURE;ENABLE_TIMELINE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;ENABLE_NATIVE_ARRAY;ENABLE_SPRITE_MASKING;INCLUDE_DYNAMIC_GI;INCLUDE_GI;ENABLE_MONO_BDWGC;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;INCLUDE_PUBNUB;ENABLE_PLAYMODE_TESTS_RUNNER;ENABLE_VIDEO;ENABLE_RMGUI;ENABLE_PACKMAN;ENABLE_CUSTOM_RENDER_TEXTURE;ENABLE_STYLE_SHEETS;ENABLE_LOCALIZATION;PLATFORM_STANDALONE_WIN;PLATFORM_STANDALONE;UNITY_STANDALONE_WIN;UNITY_STANDALONE;ENABLE_SUBSTANCE;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_UNITYWEBREQUEST;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_EVENT_QUEUE;ENABLE_CLUSTERINPUT;ENABLE_VR;ENABLE_AR;ENABLE_WEBSOCKET_HOST;ENABLE_MONO;NET_2_0_SUBSET;ENABLE_PROFILER;DEBUG;TRACE;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;ENABLE_NATIVE_ARRAY_CHECKS;UNITY_TEAM_LICENSE;ENABLE_VSTU;UNITY_PRO_LICENSE</DefineConstants>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="mscorlib" />
+    <Reference Include="System" />
+    <Reference Include="System.XML" />
+    <Reference Include="System.Core" />
+    <Reference Include="Boo.Lang" />
+    <Reference Include="UnityScript.Lang" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="UnityEditor">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEditor.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.CoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AccessibilityModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.AccessibilityModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ParticleSystemModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.ParticleSystemModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.PhysicsModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.PhysicsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.VehiclesModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.VehiclesModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ClothModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.ClothModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AIModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AnimationModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.AnimationModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TextRenderingModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.TextRenderingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UIModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.UIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TerrainPhysicsModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.TerrainPhysicsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.IMGUIModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.IMGUIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ClusterInputModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.ClusterInputModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ClusterRendererModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.ClusterRendererModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UNETModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.UNETModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.DirectorModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.DirectorModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityAnalyticsModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.UnityAnalyticsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.PerformanceReportingModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.PerformanceReportingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityConnectModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.UnityConnectModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.WebModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.WebModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ARModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.ARModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.VRModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.VRModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UIElementsModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.UIElementsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.StyleSheetsModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.StyleSheetsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AssetBundleModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.AssetBundleModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AudioModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.AudioModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CrashReportingModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.CrashReportingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.GameCenterModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.GameCenterModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.GridModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.GridModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ImageConversionModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.ImageConversionModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.InputModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.InputModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.JSONSerializeModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.JSONSerializeModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ParticlesLegacyModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.ParticlesLegacyModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Physics2DModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.Physics2DModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ScreenCaptureModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.ScreenCaptureModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SharedInternalsModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.SharedInternalsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SpriteMaskModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.SpriteMaskModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SpriteShapeModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.SpriteShapeModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TerrainModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.TerrainModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TilemapModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.TilemapModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestAudioModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestAudioModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestTextureModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestTextureModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestWWWModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestWWWModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.VideoModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.VideoModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.WindModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.WindModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.UI">
+      <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/Editor/UnityEditor.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Networking">
+      <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.Networking">
+      <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Networking/Editor/UnityEditor.Networking.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.TestRunner">
+      <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/TestRunner/Editor/UnityEditor.TestRunner.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TestRunner">
+      <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/TestRunner/UnityEngine.TestRunner.dll</HintPath>
+    </Reference>
+    <Reference Include="nunit.framework">
+      <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/TestRunner/net35/unity-custom/nunit.framework.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Timeline">
+      <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Timeline/RuntimeEditor/UnityEngine.Timeline.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.Timeline">
+      <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Timeline/Editor/UnityEditor.Timeline.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.TreeEditor">
+      <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/TreeEditor/Editor/UnityEditor.TreeEditor.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UIAutomation">
+      <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UIAutomation/UnityEngine.UIAutomation.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.UIAutomation">
+      <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UIAutomation/Editor/UnityEditor.UIAutomation.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.GoogleAudioSpatializer">
+      <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityGoogleAudioSpatializer/Editor/UnityEditor.GoogleAudioSpatializer.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.GoogleAudioSpatializer">
+      <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityGoogleAudioSpatializer/RuntimeEditor/UnityEngine.GoogleAudioSpatializer.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.HoloLens">
+      <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityHoloLens/Editor/UnityEditor.HoloLens.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.HoloLens">
+      <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityHoloLens/RuntimeEditor/UnityEngine.HoloLens.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.SpatialTracking">
+      <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnitySpatialTracking/Editor/UnityEditor.SpatialTracking.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SpatialTracking">
+      <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnitySpatialTracking/RuntimeEditor/UnityEngine.SpatialTracking.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.VR">
+      <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityVR/Editor/UnityEditor.VR.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.Graphs">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEditor.Graphs.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.LinuxStandalone.Extensions">
+      <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/UnityEditor.LinuxStandalone.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.WindowsStandalone.Extensions">
+      <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/windowsstandalonesupport/UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.OSXStandalone.Extensions">
+      <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="SyntaxTree.VisualStudio.Unity.Bridge">
+      <HintPath>C:/Program Files (x86)/Microsoft Visual Studio Tools for Unity/15.0/Editor/SyntaxTree.VisualStudio.Unity.Bridge.dll</HintPath>
+    </Reference>
+    <Reference Include="NATTraversalForUNET">
+      <HintPath>Assets/Plugins/NAT Traversal for UNET/NATTraversalForUNET.dll</HintPath>
+    </Reference>
+    <Reference Include="Open.Nat">
+      <HintPath>Assets/Plugins/NAT Traversal for UNET/Open.Nat.dll</HintPath>
+    </Reference>
+    <Reference Include="RakNetSwig">
+      <HintPath>Assets/Plugins/NAT Traversal for UNET/RakNetSwig.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading">
+      <HintPath>Assets/Plugins/NAT Traversal for UNET/System.Threading.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Advertisements">
+      <HintPath>C:/Users/cjwag/AppData/LocalLow/Unity/cache/packages/packages.unity.com/com.unity.ads@2.0.3/UnityEngine.Advertisements.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.Advertisements">
+      <HintPath>C:/Users/cjwag/AppData/LocalLow/Unity/cache/packages/packages.unity.com/com.unity.ads@2.0.3/Editor/UnityEditor.Advertisements.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Analytics">
+      <HintPath>C:/Users/cjwag/AppData/LocalLow/Unity/cache/packages/packages.unity.com/com.unity.analytics@2.0.13/UnityEngine.Analytics.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.Analytics">
+      <HintPath>C:/Users/cjwag/AppData/LocalLow/Unity/cache/packages/packages.unity.com/com.unity.analytics@2.0.13/Editor/UnityEditor.Analytics.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Purchasing">
+      <HintPath>C:/Users/cjwag/AppData/LocalLow/Unity/cache/packages/packages.unity.com/com.unity.purchasing@0.0.19/UnityEngine.Purchasing.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.Purchasing">
+      <HintPath>C:/Users/cjwag/AppData/LocalLow/Unity/cache/packages/packages.unity.com/com.unity.purchasing@0.0.19/Editor/UnityEditor.Purchasing.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.StandardEvents">
+      <HintPath>C:/Users/cjwag/AppData/LocalLow/Unity/cache/packages/packages.unity.com/com.unity.standardevents@1.0.10/UnityEngine.StandardEvents.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="Artillery Cats.Plugins.csproj">
+      <Project>{0D86B77C-69D3-781B-8AEF-1D03EB0E07B0}</Project>
+      <Name>Artillery Cats.Plugins</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Assets\Plugins\Editor\NATLobbyManagerEditor.cs" />
+    <Compile Include="Assets\Plugins\Editor\NATNetworkManagerEditor.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\2DxFX\Resources\2dxfx_AL\_2dxFX_AL_4Gradients.shader" />
+    <None Include="Assets\2DxFX\Resources\2dxfx_AL\_2dxFX_AL_BlackHole.shader" />
+    <None Include="Assets\2DxFX\Resources\2dxfx_AL\_2dxFX_AL_Blood.shader" />
+    <None Include="Assets\2DxFX\Resources\2dxfx_AL\_2dxFX_AL_Blur.shader" />
+    <None Include="Assets\2DxFX\Resources\2dxfx_AL\_2dxFX_AL_BurningFX.shader" />
+    <None Include="Assets\2DxFX\Resources\2dxfx_AL\_2dxFX_AL_Cartoon.shader" />
+    <None Include="Assets\2DxFX\Resources\2dxfx_AL\_2dxFX_AL_CircleFade.shader" />
+    <None Include="Assets\2DxFX\Resources\2dxfx_AL\_2dxFX_AL_Clipping.shader" />
+    <None Include="Assets\2DxFX\Resources\2dxfx_AL\_2dxFX_AL_Color.shader" />
+    <None Include="Assets\2DxFX\Resources\2dxfx_AL\_2dxFX_AL_ColorChange.shader" />
+    <None Include="Assets\2DxFX\Resources\2dxfx_AL\_2dxFX_AL_ColorRGB.shader" />
+    <None Include="Assets\2DxFX\Resources\2dxfx_AL\_2dxFX_AL_CompressionFX.shader" />
+    <None Include="Assets\2DxFX\Resources\2dxfx_AL\_2dxFX_AL_DesintegrationFX.shader" />
+    <None Include="Assets\2DxFX\Resources\2dxfx_AL\_2dxFX_AL_DestroyedFX.shader" />
+    <None Include="Assets\2DxFX\Resources\2dxfx_AL\_2dxFX_AL_Distortion.shader" />
+    <None Include="Assets\2DxFX\Resources\2dxfx_AL\_2dxFX_AL_EdgeColor.shader" />
+    <None Include="Assets\2DxFX\Resources\2dxfx_AL\_2dxFX_AL_EnergyBar.shader" />
+    <None Include="Assets\2DxFX\Resources\2dxfx_AL\_2dxFX_AL_Fire.shader" />
+    <None Include="Assets\2DxFX\Resources\2dxfx_AL\_2dxFX_AL_Flame.shader" />
+    <None Include="Assets\2DxFX\Resources\2dxfx_AL\_2dxFX_AL_Frozen.shader" />
+    <None Include="Assets\2DxFX\Resources\2dxfx_AL\_2dxFX_AL_Ghost.shader" />
+    <None Include="Assets\2DxFX\Resources\2dxfx_AL\_2dxFX_AL_GoldFX.shader" />
+    <None Include="Assets\2DxFX\Resources\2dxfx_AL\_2dxFX_AL_GoldenFX.shader" />
+    <None Include="Assets\2DxFX\Resources\2dxfx_AL\_2dxFX_AL_GrassFX.shader" />
+    <None Include="Assets\2DxFX\Resources\2dxfx_AL\_2dxFX_AL_GrassMultiFX.shader" />
+    <None Include="Assets\2DxFX\Resources\2dxfx_AL\_2dxFX_AL_GrayScale.shader" />
+    <None Include="Assets\2DxFX\Resources\2dxfx_AL\_2dxFX_AL_HSV.shader" />
+    <None Include="Assets\2DxFX\Resources\2dxfx_AL\_2dxFX_AL_Heat.shader" />
+    <None Include="Assets\2DxFX\Resources\2dxfx_AL\_2dxFX_AL_Hologram.shader" />
+    <None Include="Assets\2DxFX\Resources\2dxfx_AL\_2dxFX_AL_Hologram2.shader" />
+    <None Include="Assets\2DxFX\Resources\2dxfx_AL\_2dxFX_AL_Hologram3.shader" />
+    <None Include="Assets\2DxFX\Resources\2dxfx_AL\_2dxFX_AL_Ice.shader" />
+    <None Include="Assets\2DxFX\Resources\2dxfx_AL\_2dxFX_AL_IcedFX.shader" />
+    <None Include="Assets\2DxFX\Resources\2dxfx_AL\_2dxFX_AL_Jelly.shader" />
+    <None Include="Assets\2DxFX\Resources\2dxfx_AL\_2dxFX_AL_Lightning.shader" />
+    <None Include="Assets\2DxFX\Resources\2dxfx_AL\_2dxFX_AL_LightningBolt.shader" />
+    <None Include="Assets\2DxFX\Resources\2dxfx_AL\_2dxFX_AL_Liquid.shader" />
+    <None Include="Assets\2DxFX\Resources\2dxfx_AL\_2dxFX_AL_Liquify.shader" />
+    <None Include="Assets\2DxFX\Resources\2dxfx_AL\_2dxFX_AL_MetalFX.shader" />
+    <None Include="Assets\2DxFX\Resources\2dxfx_AL\_2dxFX_AL_Mystic_Distortion.shader" />
+    <None Include="Assets\2DxFX\Resources\2dxfx_AL\_2dxFX_AL_Negative.shader" />
+    <None Include="Assets\2DxFX\Resources\2dxfx_AL\_2dxFX_AL_Noise.shader" />
+    <None Include="Assets\2DxFX\Resources\2dxfx_AL\_2dxFX_AL_NoiseAnimated.shader" />
+    <None Include="Assets\2DxFX\Resources\2dxfx_AL\_2dxFX_AL_Normal.shader" />
+    <None Include="Assets\2DxFX\Resources\2dxfx_AL\_2dxFX_AL_Offset.shader" />
+    <None Include="Assets\2DxFX\Resources\2dxfx_AL\_2dxFX_AL_Outline.shader" />
+    <None Include="Assets\2DxFX\Resources\2dxfx_AL\_2dxFX_AL_Pattern.shader" />
+    <None Include="Assets\2DxFX\Resources\2dxfx_AL\_2dxFX_AL_Pixel.shader" />
+    <None Include="Assets\2DxFX\Resources\2dxfx_AL\_2dxFX_AL_Pixel8bitsBW.shader" />
+    <None Include="Assets\2DxFX\Resources\2dxfx_AL\_2dxFX_AL_Pixel8bitsC64.shader" />
+    <None Include="Assets\2DxFX\Resources\2dxfx_AL\_2dxFX_AL_Pixel8bitsGB.shader" />
+    <None Include="Assets\2DxFX\Resources\2dxfx_AL\_2dxFX_AL_PixelDie.shader" />
+    <None Include="Assets\2DxFX\Resources\2dxfx_AL\_2dxFX_AL_PlasmaRainbow.shader" />
+    <None Include="Assets\2DxFX\Resources\2dxfx_AL\_2dxFX_AL_PlasmaShield.shader" />
+    <None Include="Assets\2DxFX\Resources\2dxfx_AL\_2dxFX_AL_Posterize.shader" />
+    <None Include="Assets\2DxFX\Resources\2dxfx_AL\_2dxFX_AL_SandFX.shader" />
+    <None Include="Assets\2DxFX\Resources\2dxfx_AL\_2dxFX_AL_Sepia.shader" />
+    <None Include="Assets\2DxFX\Resources\2dxfx_AL\_2dxFX_AL_Sharpen.shader" />
+    <None Include="Assets\2DxFX\Resources\2dxfx_AL\_2dxFX_AL_Shiny_Reflect.shader" />
+    <None Include="Assets\2DxFX\Resources\2dxfx_AL\_2dxFX_AL_SkyCloud.shader" />
+    <None Include="Assets\2DxFX\Resources\2dxfx_AL\_2dxFX_AL_Slim.shader" />
+    <None Include="Assets\2DxFX\Resources\2dxfx_AL\_2dxFX_AL_Smoke.shader" />
+    <None Include="Assets\2DxFX\Resources\2dxfx_AL\_2dxFX_AL_StoneFX.shader" />
+    <None Include="Assets\2DxFX\Resources\2dxfx_AL\_2dxFX_AL_Threshold.shader" />
+    <None Include="Assets\2DxFX\Resources\2dxfx_AL\_2dxFX_AL_Twist.shader" />
+    <None Include="Assets\2DxFX\Resources\2dxfx_AL\_2dxFX_AL_WoodFX.shader" />
+    <None Include="Assets\2DxFX\Resources\_2dxFX_4Gradients.shader" />
+    <None Include="Assets\2DxFX\Resources\_2dxFX_Additive.shader" />
+    <None Include="Assets\2DxFX\Resources\_2dxFX_BlackHole.shader" />
+    <None Include="Assets\2DxFX\Resources\_2dxFX_Blood.shader" />
+    <None Include="Assets\2DxFX\Resources\_2dxFX_Blur.shader" />
+    <None Include="Assets\2DxFX\Resources\_2dxFX_BlurHQ.shader" />
+    <None Include="Assets\2DxFX\Resources\_2dxFX_BlurHQX.shader" />
+    <None Include="Assets\2DxFX\Resources\_2dxFX_BurnFX.shader" />
+    <None Include="Assets\2DxFX\Resources\_2dxFX_BurningFX.shader" />
+    <None Include="Assets\2DxFX\Resources\_2dxFX_Cartoon.shader" />
+    <None Include="Assets\2DxFX\Resources\_2dxFX_CircleFade.shader" />
+    <None Include="Assets\2DxFX\Resources\_2dxFX_Clipping.shader" />
+    <None Include="Assets\2DxFX\Resources\_2dxFX_Color.shader" />
+    <None Include="Assets\2DxFX\Resources\_2dxFX_ColorChange.shader" />
+    <None Include="Assets\2DxFX\Resources\_2dxFX_ColorRGB.shader" />
+    <None Include="Assets\2DxFX\Resources\_2dxFX_CompressionFX.shader" />
+    <None Include="Assets\2DxFX\Resources\_2dxFX_DesintegrationFX.shader" />
+    <None Include="Assets\2DxFX\Resources\_2dxFX_DestroyedFX.shader" />
+    <None Include="Assets\2DxFX\Resources\_2dxFX_Distortion.shader" />
+    <None Include="Assets\2DxFX\Resources\_2dxFX_Distortion_Additive.shader" />
+    <None Include="Assets\2DxFX\Resources\_2dxFX_EdgeColor.shader" />
+    <None Include="Assets\2DxFX\Resources\_2dxFX_EnergyBar.shader" />
+    <None Include="Assets\2DxFX\Resources\_2dxFX_Fire.shader" />
+    <None Include="Assets\2DxFX\Resources\_2dxFX_FireAdditive.shader" />
+    <None Include="Assets\2DxFX\Resources\_2dxFX_Flame.shader" />
+    <None Include="Assets\2DxFX\Resources\_2dxFX_FlameAdditive.shader" />
+    <None Include="Assets\2DxFX\Resources\_2dxFX_Frozen.shader" />
+    <None Include="Assets\2DxFX\Resources\_2dxFX_Ghost.shader" />
+    <None Include="Assets\2DxFX\Resources\_2dxFX_GoldFX.shader" />
+    <None Include="Assets\2DxFX\Resources\_2dxFX_GoldenFX.shader" />
+    <None Include="Assets\2DxFX\Resources\_2dxFX_GrassFX.shader" />
+    <None Include="Assets\2DxFX\Resources\_2dxFX_GrassMultiFX.shader" />
+    <None Include="Assets\2DxFX\Resources\_2dxFX_GrayScale.shader" />
+    <None Include="Assets\2DxFX\Resources\_2dxFX_HSV.shader" />
+    <None Include="Assets\2DxFX\Resources\_2dxFX_Heat.shader" />
+    <None Include="Assets\2DxFX\Resources\_2dxFX_Hologram.shader" />
+    <None Include="Assets\2DxFX\Resources\_2dxFX_Hologram2.shader" />
+    <None Include="Assets\2DxFX\Resources\_2dxFX_Hologram3.shader" />
+    <None Include="Assets\2DxFX\Resources\_2dxFX_Ice.shader" />
+    <None Include="Assets\2DxFX\Resources\_2dxFX_IcedFX.shader" />
+    <None Include="Assets\2DxFX\Resources\_2dxFX_Jelly.shader" />
+    <None Include="Assets\2DxFX\Resources\_2dxFX_Lightning.shader" />
+    <None Include="Assets\2DxFX\Resources\_2dxFX_LightningBolt.shader" />
+    <None Include="Assets\2DxFX\Resources\_2dxFX_Liquid.shader" />
+    <None Include="Assets\2DxFX\Resources\_2dxFX_Liquify.shader" />
+    <None Include="Assets\2DxFX\Resources\_2dxFX_MetalFX.shader" />
+    <None Include="Assets\2DxFX\Resources\_2dxFX_Mystic_Distortion.shader" />
+    <None Include="Assets\2DxFX\Resources\_2dxFX_Mystic_Distortion_Additive.shader" />
+    <None Include="Assets\2DxFX\Resources\_2dxFX_Negative.shader" />
+    <None Include="Assets\2DxFX\Resources\_2dxFX_NewTeleportation.shader" />
+    <None Include="Assets\2DxFX\Resources\_2dxFX_NewTeleportation2.shader" />
+    <None Include="Assets\2DxFX\Resources\_2dxFX_Noise.shader" />
+    <None Include="Assets\2DxFX\Resources\_2dxFX_NoiseAnimated.shader" />
+    <None Include="Assets\2DxFX\Resources\_2dxFX_Offset.shader" />
+    <None Include="Assets\2DxFX\Resources\_2dxFX_Outline.shader" />
+    <None Include="Assets\2DxFX\Resources\_2dxFX_Pattern.shader" />
+    <None Include="Assets\2DxFX\Resources\_2dxFX_PatternAdditive.shader" />
+    <None Include="Assets\2DxFX\Resources\_2dxFX_Pixel.shader" />
+    <None Include="Assets\2DxFX\Resources\_2dxFX_Pixel8bitsBW.shader" />
+    <None Include="Assets\2DxFX\Resources\_2dxFX_Pixel8bitsC64.shader" />
+    <None Include="Assets\2DxFX\Resources\_2dxFX_Pixel8bitsGB.shader" />
+    <None Include="Assets\2DxFX\Resources\_2dxFX_PixelDie.shader" />
+    <None Include="Assets\2DxFX\Resources\_2dxFX_PlasmaRainbow.shader" />
+    <None Include="Assets\2DxFX\Resources\_2dxFX_PlasmaRainbow_Color.shader" />
+    <None Include="Assets\2DxFX\Resources\_2dxFX_PlasmaShield.shader" />
+    <None Include="Assets\2DxFX\Resources\_2dxFX_Posterize.shader" />
+    <None Include="Assets\2DxFX\Resources\_2dxFX_SandFX.shader" />
+    <None Include="Assets\2DxFX\Resources\_2dxFX_Sepia.shader" />
+    <None Include="Assets\2DxFX\Resources\_2dxFX_Sharpen.shader" />
+    <None Include="Assets\2DxFX\Resources\_2dxFX_Shiny_Reflect.shader" />
+    <None Include="Assets\2DxFX\Resources\_2dxFX_SkyCloud.shader" />
+    <None Include="Assets\2DxFX\Resources\_2dxFX_Slim.shader" />
+    <None Include="Assets\2DxFX\Resources\_2dxFX_Smoke.shader" />
+    <None Include="Assets\2DxFX\Resources\_2dxFX_StoneFX.shader" />
+    <None Include="Assets\2DxFX\Resources\_2dxFX_Teleportation.shader" />
+    <None Include="Assets\2DxFX\Resources\_2dxFX_Threshold.shader" />
+    <None Include="Assets\2DxFX\Resources\_2dxFX_Twist.shader" />
+    <None Include="Assets\2DxFX\Resources\_2dxFX_WaterAndBackground.shader" />
+    <None Include="Assets\2DxFX\Resources\_2dxFX_WaterAndBackgroundDeluxe.shader" />
+    <None Include="Assets\2DxFX\Resources\_2dxFX_Waterfall.shader" />
+    <None Include="Assets\2DxFX\Resources\_2dxFX_Wave.shader" />
+    <None Include="Assets\2DxFX\Resources\_2dxFX_WoodFX.shader" />
+    <None Include="Assets\Fonts\OpenSans\License!.txt" />
+    <None Include="Assets\NAT Traversal Example\Extras\Host Migration\README.txt" />
+    <None Include="Assets\NAT Traversal Example\Extras\Lobby\README.txt" />
+    <None Include="Assets\NAT Traversal Example\Extras\Match Up\README.txt" />
+    <None Include="Assets\NAT Traversal Example\Extras\NAT Helper\README.txt" />
+    <None Include="Assets\Plugins\NAT Traversal for UNET\NET46 README.txt" />
+    <None Include="Assets\Plugins\NAT Traversal for UNET\RakNet LICENSE.txt" />
+    <None Include="Assets\Plugins\NAT Traversal for UNET\System.Threading.xml" />
+    <None Include="Assets\Plugins\Steamworks.NET\redist\steam_appid.txt" />
+    <None Include="Assets\SpriteColorFX\Changelog.txt" />
+    <None Include="Assets\SpriteColorFX\Resources\Shaders\Blend\BumpLit\SpriteColorBlendAdditiveBumpLit.shader" />
+    <None Include="Assets\SpriteColorFX\Resources\Shaders\Blend\BumpLit\SpriteColorBlendBurnBumpLit.shader" />
+    <None Include="Assets\SpriteColorFX\Resources\Shaders\Blend\BumpLit\SpriteColorBlendColorBumpLit.shader" />
+    <None Include="Assets\SpriteColorFX\Resources\Shaders\Blend\BumpLit\SpriteColorBlendDarkenBumpLit.shader" />
+    <None Include="Assets\SpriteColorFX\Resources\Shaders\Blend\BumpLit\SpriteColorBlendDarkerBumpLit.shader" />
+    <None Include="Assets\SpriteColorFX\Resources\Shaders\Blend\BumpLit\SpriteColorBlendDifferenceBumpLit.shader" />
+    <None Include="Assets\SpriteColorFX\Resources\Shaders\Blend\BumpLit\SpriteColorBlendDivideBumpLit.shader" />
+    <None Include="Assets\SpriteColorFX\Resources\Shaders\Blend\BumpLit\SpriteColorBlendDodgeBumpLit.shader" />
+    <None Include="Assets\SpriteColorFX\Resources\Shaders\Blend\BumpLit\SpriteColorBlendHardLightBumpLit.shader" />
+    <None Include="Assets\SpriteColorFX\Resources\Shaders\Blend\BumpLit\SpriteColorBlendHardMixBumpLit.shader" />
+    <None Include="Assets\SpriteColorFX\Resources\Shaders\Blend\BumpLit\SpriteColorBlendHueBumpLit.shader" />
+    <None Include="Assets\SpriteColorFX\Resources\Shaders\Blend\BumpLit\SpriteColorBlendLightenBumpLit.shader" />
+    <None Include="Assets\SpriteColorFX\Resources\Shaders\Blend\BumpLit\SpriteColorBlendLighterBumpLit.shader" />
+    <None Include="Assets\SpriteColorFX\Resources\Shaders\Blend\BumpLit\SpriteColorBlendLuminosityBumpLit.shader" />
+    <None Include="Assets\SpriteColorFX\Resources\Shaders\Blend\BumpLit\SpriteColorBlendMultiplyBumpLit.shader" />
+    <None Include="Assets\SpriteColorFX\Resources\Shaders\Blend\BumpLit\SpriteColorBlendOverlayBumpLit.shader" />
+    <None Include="Assets\SpriteColorFX\Resources\Shaders\Blend\BumpLit\SpriteColorBlendPinLightBumpLit.shader" />
+    <None Include="Assets\SpriteColorFX\Resources\Shaders\Blend\BumpLit\SpriteColorBlendSaturationBumpLit.shader" />
+    <None Include="Assets\SpriteColorFX\Resources\Shaders\Blend\BumpLit\SpriteColorBlendScreenBumpLit.shader" />
+    <None Include="Assets\SpriteColorFX\Resources\Shaders\Blend\BumpLit\SpriteColorBlendSoftLightBumpLit.shader" />
+    <None Include="Assets\SpriteColorFX\Resources\Shaders\Blend\BumpLit\SpriteColorBlendSolidBumpLit.shader" />
+    <None Include="Assets\SpriteColorFX\Resources\Shaders\Blend\BumpLit\SpriteColorBlendSubtractBumpLit.shader" />
+    <None Include="Assets\SpriteColorFX\Resources\Shaders\Blend\BumpLit\SpriteColorBlendVividLightBumpLit.shader" />
+    <None Include="Assets\SpriteColorFX\Resources\Shaders\Blend\SpriteColorBlendAdditive.shader" />
+    <None Include="Assets\SpriteColorFX\Resources\Shaders\Blend\SpriteColorBlendBurn.shader" />
+    <None Include="Assets\SpriteColorFX\Resources\Shaders\Blend\SpriteColorBlendColor.shader" />
+    <None Include="Assets\SpriteColorFX\Resources\Shaders\Blend\SpriteColorBlendDarken.shader" />
+    <None Include="Assets\SpriteColorFX\Resources\Shaders\Blend\SpriteColorBlendDarker.shader" />
+    <None Include="Assets\SpriteColorFX\Resources\Shaders\Blend\SpriteColorBlendDifference.shader" />
+    <None Include="Assets\SpriteColorFX\Resources\Shaders\Blend\SpriteColorBlendDivide.shader" />
+    <None Include="Assets\SpriteColorFX\Resources\Shaders\Blend\SpriteColorBlendDodge.shader" />
+    <None Include="Assets\SpriteColorFX\Resources\Shaders\Blend\SpriteColorBlendHardLight.shader" />
+    <None Include="Assets\SpriteColorFX\Resources\Shaders\Blend\SpriteColorBlendHardMix.shader" />
+    <None Include="Assets\SpriteColorFX\Resources\Shaders\Blend\SpriteColorBlendHue.shader" />
+    <None Include="Assets\SpriteColorFX\Resources\Shaders\Blend\SpriteColorBlendLighten.shader" />
+    <None Include="Assets\SpriteColorFX\Resources\Shaders\Blend\SpriteColorBlendLighter.shader" />
+    <None Include="Assets\SpriteColorFX\Resources\Shaders\Blend\SpriteColorBlendLuminosity.shader" />
+    <None Include="Assets\SpriteColorFX\Resources\Shaders\Blend\SpriteColorBlendMultiply.shader" />
+    <None Include="Assets\SpriteColorFX\Resources\Shaders\Blend\SpriteColorBlendOverlay.shader" />
+    <None Include="Assets\SpriteColorFX\Resources\Shaders\Blend\SpriteColorBlendPinLight.shader" />
+    <None Include="Assets\SpriteColorFX\Resources\Shaders\Blend\SpriteColorBlendSaturation.shader" />
+    <None Include="Assets\SpriteColorFX\Resources\Shaders\Blend\SpriteColorBlendScreen.shader" />
+    <None Include="Assets\SpriteColorFX\Resources\Shaders\Blend\SpriteColorBlendSoftLight.shader" />
+    <None Include="Assets\SpriteColorFX\Resources\Shaders\Blend\SpriteColorBlendSolid.shader" />
+    <None Include="Assets\SpriteColorFX\Resources\Shaders\Blend\SpriteColorBlendSubtract.shader" />
+    <None Include="Assets\SpriteColorFX\Resources\Shaders\Blend\SpriteColorBlendVividLight.shader" />
+    <None Include="Assets\SpriteColorFX\Resources\Shaders\Dissolve\BumpLit\SpriteColorDissolveBorderColorAdditiveBumpLit.shader" />
+    <None Include="Assets\SpriteColorFX\Resources\Shaders\Dissolve\BumpLit\SpriteColorDissolveBorderColorBurnBumpLit.shader" />
+    <None Include="Assets\SpriteColorFX\Resources\Shaders\Dissolve\BumpLit\SpriteColorDissolveBorderColorColorBumpLit.shader" />
+    <None Include="Assets\SpriteColorFX\Resources\Shaders\Dissolve\BumpLit\SpriteColorDissolveBorderColorDarkenBumpLit.shader" />
+    <None Include="Assets\SpriteColorFX\Resources\Shaders\Dissolve\BumpLit\SpriteColorDissolveBorderColorDarkerBumpLit.shader" />
+    <None Include="Assets\SpriteColorFX\Resources\Shaders\Dissolve\BumpLit\SpriteColorDissolveBorderColorDifferenceBumpLit.shader" />
+    <None Include="Assets\SpriteColorFX\Resources\Shaders\Dissolve\BumpLit\SpriteColorDissolveBorderColorDivideBumpLit.shader" />
+    <None Include="Assets\SpriteColorFX\Resources\Shaders\Dissolve\BumpLit\SpriteColorDissolveBorderColorDodgeBumpLit.shader" />
+    <None Include="Assets\SpriteColorFX\Resources\Shaders\Dissolve\BumpLit\SpriteColorDissolveBorderColorHardLightBumpLit.shader" />
+    <None Include="Assets\SpriteColorFX\Resources\Shaders\Dissolve\BumpLit\SpriteColorDissolveBorderColorHardMixBumpLit.shader" />
+    <None Include="Assets\SpriteColorFX\Resources\Shaders\Dissolve\BumpLit\SpriteColorDissolveBorderColorHueBumpLit.shader" />
+    <None Include="Assets\SpriteColorFX\Resources\Shaders\Dissolve\BumpLit\SpriteColorDissolveBorderColorLightenBumpLit.shader" />
+    <None Include="Assets\SpriteColorFX\Resources\Shaders\Dissolve\BumpLit\SpriteColorDissolveBorderColorLighterBumpLit.shader" />
+    <None Include="Assets\SpriteColorFX\Resources\Shaders\Dissolve\BumpLit\SpriteColorDissolveBorderColorLuminosityBumpLit.shader" />
+    <None Include="Assets\SpriteColorFX\Resources\Shaders\Dissolve\BumpLit\SpriteColorDissolveBorderColorMultiplyBumpLit.shader" />
+    <None Include="Assets\SpriteColorFX\Resources\Shaders\Dissolve\BumpLit\SpriteColorDissolveBorderColorOverlayBumpLit.shader" />
+    <None Include="Assets\SpriteColorFX\Resources\Shaders\Dissolve\BumpLit\SpriteColorDissolveBorderColorPinLightBumpLit.shader" />
+    <None Include="Assets\SpriteColorFX\Resources\Shaders\Dissolve\BumpLit\SpriteColorDissolveBorderColorSaturationBumpLit.shader" />
+    <None Include="Assets\SpriteColorFX\Resources\Shaders\Dissolve\BumpLit\SpriteColorDissolveBorderColorScreenBumpLit.shader" />
+    <None Include="Assets\SpriteColorFX\Resources\Shaders\Dissolve\BumpLit\SpriteColorDissolveBorderColorSoftLightBumpLit.shader" />
+    <None Include="Assets\SpriteColorFX\Resources\Shaders\Dissolve\BumpLit\SpriteColorDissolveBorderColorSolidBumpLit.shader" />
+    <None Include="Assets\SpriteColorFX\Resources\Shaders\Dissolve\BumpLit\SpriteColorDissolveBorderColorSubtractBumpLit.shader" />
+    <None Include="Assets\SpriteColorFX\Resources\Shaders\Dissolve\BumpLit\SpriteColorDissolveBorderColorVividLightBumpLit.shader" />
+    <None Include="Assets\SpriteColorFX\Resources\Shaders\Dissolve\BumpLit\SpriteColorDissolveBorderTextureAdditiveBumpLit.shader" />
+    <None Include="Assets\SpriteColorFX\Resources\Shaders\Dissolve\BumpLit\SpriteColorDissolveBorderTextureBurnBumpLit.shader" />
+    <None Include="Assets\SpriteColorFX\Resources\Shaders\Dissolve\BumpLit\SpriteColorDissolveBorderTextureColorBumpLit.shader" />
+    <None Include="Assets\SpriteColorFX\Resources\Shaders\Dissolve\BumpLit\SpriteColorDissolveBorderTextureDarkenBumpLit.shader" />
+    <None Include="Assets\SpriteColorFX\Resources\Shaders\Dissolve\BumpLit\SpriteColorDissolveBorderTextureDarkerBumpLit.shader" />
+    <None Include="Assets\SpriteColorFX\Resources\Shaders\Dissolve\BumpLit\SpriteColorDissolveBorderTextureDifferenceBumpLit.shader" />
+    <None Include="Assets\SpriteColorFX\Resources\Shaders\Dissolve\BumpLit\SpriteColorDissolveBorderTextureDivideBumpLit.shader" />
+    <None Include="Assets\SpriteColorFX\Resources\Shaders\Dissolve\BumpLit\SpriteColorDissolveBorderTextureDodgeBumpLit.shader" />
+    <None Include="Assets\SpriteColorFX\Resources\Shaders\Dissolve\BumpLit\SpriteColorDissolveBorderTextureHardLightBumpLit.shader" />
+    <None Include="Assets\SpriteColorFX\Resources\Shaders\Dissolve\BumpLit\SpriteColorDissolveBorderTextureHardMixBumpLit.shader" />
+    <None Include="Assets\SpriteColorFX\Resources\Shaders\Dissolve\BumpLit\SpriteColorDissolveBorderTextureHueBumpLit.shader" />
+    <None Include="Assets\SpriteColorFX\Resources\Shaders\Dissolve\BumpLit\SpriteColorDissolveBorderTextureLightenBumpLit.shader" />
+    <None Include="Assets\SpriteColorFX\Resources\Shaders\Dissolve\BumpLit\SpriteColorDissolveBorderTextureLighterBumpLit.shader" />
+    <None Include="Assets\SpriteColorFX\Resources\Shaders\Dissolve\BumpLit\SpriteColorDissolveBorderTextureLuminosityBumpLit.shader" />
+    <None Include="Assets\SpriteColorFX\Resources\Shaders\Dissolve\BumpLit\SpriteColorDissolveBorderTextureMultiplyBumpLit.shader" />
+    <None Include="Assets\SpriteColorFX\Resources\Shaders\Dissolve\BumpLit\SpriteColorDissolveBorderTextureOverlayBumpLit.shader" />
+    <None Include="Assets\SpriteColorFX\Resources\Shaders\Dissolve\BumpLit\SpriteColorDissolveBorderTexturePinLightBumpLit.shader" />
+    <None Include="Assets\SpriteColorFX\Resources\Shaders\Dissolve\BumpLit\SpriteColorDissolveBorderTextureSaturationBumpLit.shader" />
+    <None Include="Assets\SpriteColorFX\Resources\Shaders\Dissolve\BumpLit\SpriteColorDissolveBorderTextureScreenBumpLit.shader" />
+    <None Include="Assets\SpriteColorFX\Resources\Shaders\Dissolve\BumpLit\SpriteColorDissolveBorderTextureSoftLightBumpLit.shader" />
+    <None Include="Assets\SpriteColorFX\Resources\Shaders\Dissolve\BumpLit\SpriteColorDissolveBorderTextureSolidBumpLit.shader" />
+    <None Include="Assets\SpriteColorFX\Resources\Shaders\Dissolve\BumpLit\SpriteColorDissolveBorderTextureSubtractBumpLit.shader" />
+    <None Include="Assets\SpriteColorFX\Resources\Shaders\Dissolve\BumpLit\SpriteColorDissolveBorderTextureVividLightBumpLit.shader" />
+    <None Include="Assets\SpriteColorFX\Resources\Shaders\Dissolve\BumpLit\SpriteColorDissolveNormalBumpLit.shader" />
+    <None Include="Assets\SpriteColorFX\Resources\Shaders\Dissolve\SpriteColorDissolveBorderColorAdditive.shader" />
+    <None Include="Assets\SpriteColorFX\Resources\Shaders\Dissolve\SpriteColorDissolveBorderColorBurn.shader" />
+    <None Include="Assets\SpriteColorFX\Resources\Shaders\Dissolve\SpriteColorDissolveBorderColorColor.shader" />
+    <None Include="Assets\SpriteColorFX\Resources\Shaders\Dissolve\SpriteColorDissolveBorderColorDarken.shader" />
+    <None Include="Assets\SpriteColorFX\Resources\Shaders\Dissolve\SpriteColorDissolveBorderColorDarker.shader" />
+    <None Include="Assets\SpriteColorFX\Resources\Shaders\Dissolve\SpriteColorDissolveBorderColorDifference.shader" />
+    <None Include="Assets\SpriteColorFX\Resources\Shaders\Dissolve\SpriteColorDissolveBorderColorDivide.shader" />
+    <None Include="Assets\SpriteColorFX\Resources\Shaders\Dissolve\SpriteColorDissolveBorderColorDodge.shader" />
+    <None Include="Assets\SpriteColorFX\Resources\Shaders\Dissolve\SpriteColorDissolveBorderColorHardLight.shader" />
+    <None Include="Assets\SpriteColorFX\Resources\Shaders\Dissolve\SpriteColorDissolveBorderColorHardMix.shader" />
+    <None Include="Assets\SpriteColorFX\Resources\Shaders\Dissolve\SpriteColorDissolveBorderColorHue.shader" />
+    <None Include="Assets\SpriteColorFX\Resources\Shaders\Dissolve\SpriteColorDissolveBorderColorLighten.shader" />
+    <None Include="Assets\SpriteColorFX\Resources\Shaders\Dissolve\SpriteColorDissolveBorderColorLighter.shader" />
+    <None Include="Assets\SpriteColorFX\Resources\Shaders\Dissolve\SpriteColorDissolveBorderColorLuminosity.shader" />
+    <None Include="Assets\SpriteColorFX\Resources\Shaders\Dissolve\SpriteColorDissolveBorderColorMultiply.shader" />
+    <None Include="Assets\SpriteColorFX\Resources\Shaders\Dissolve\SpriteColorDissolveBorderColorOverlay.shader" />
+    <None Include="Assets\SpriteColorFX\Resources\Shaders\Dissolve\SpriteColorDissolveBorderColorPinLight.shader" />
+    <None Include="Assets\SpriteColorFX\Resources\Shaders\Dissolve\SpriteColorDissolveBorderColorSaturation.shader" />
+    <None Include="Assets\SpriteColorFX\Resources\Shaders\Dissolve\SpriteColorDissolveBorderColorScreen.shader" />
+    <None Include="Assets\SpriteColorFX\Resources\Shaders\Dissolve\SpriteColorDissolveBorderColorSoftLight.shader" />
+    <None Include="Assets\SpriteColorFX\Resources\Shaders\Dissolve\SpriteColorDissolveBorderColorSolid.shader" />
+    <None Include="Assets\SpriteColorFX\Resources\Shaders\Dissolve\SpriteColorDissolveBorderColorSubtract.shader" />
+    <None Include="Assets\SpriteColorFX\Resources\Shaders\Dissolve\SpriteColorDissolveBorderColorVividLight.shader" />
+    <None Include="Assets\SpriteColorFX\Resources\Shaders\Dissolve\SpriteColorDissolveBorderTextureAdditive.shader" />
+    <None Include="Assets\SpriteColorFX\Resources\Shaders\Dissolve\SpriteColorDissolveBorderTextureBurn.shader" />
+    <None Include="Assets\SpriteColorFX\Resources\Shaders\Dissolve\SpriteColorDissolveBorderTextureColor.shader" />
+    <None Include="Assets\SpriteColorFX\Resources\Shaders\Dissolve\SpriteColorDissolveBorderTextureDarken.shader" />
+    <None Include="Assets\SpriteColorFX\Resources\Shaders\Dissolve\SpriteColorDissolveBorderTextureDarker.shader" />
+    <None Include="Assets\SpriteColorFX\Resources\Shaders\Dissolve\SpriteColorDissolveBorderTextureDifference.shader" />
+    <None Include="Assets\SpriteColorFX\Resources\Shaders\Dissolve\SpriteColorDissolveBorderTextureDivide.shader" />
+    <None Include="Assets\SpriteColorFX\Resources\Shaders\Dissolve\SpriteColorDissolveBorderTextureDodge.shader" />
+    <None Include="Assets\SpriteColorFX\Resources\Shaders\Dissolve\SpriteColorDissolveBorderTextureHardLight.shader" />
+    <None Include="Assets\SpriteColorFX\Resources\Shaders\Dissolve\SpriteColorDissolveBorderTextureHardMix.shader" />
+    <None Include="Assets\SpriteColorFX\Resources\Shaders\Dissolve\SpriteColorDissolveBorderTextureHue.shader" />
+    <None Include="Assets\SpriteColorFX\Resources\Shaders\Dissolve\SpriteColorDissolveBorderTextureLighten.shader" />
+    <None Include="Assets\SpriteColorFX\Resources\Shaders\Dissolve\SpriteColorDissolveBorderTextureLighter.shader" />
+    <None Include="Assets\SpriteColorFX\Resources\Shaders\Dissolve\SpriteColorDissolveBorderTextureLuminosity.shader" />
+    <None Include="Assets\SpriteColorFX\Resources\Shaders\Dissolve\SpriteColorDissolveBorderTextureMultiply.shader" />
+    <None Include="Assets\SpriteColorFX\Resources\Shaders\Dissolve\SpriteColorDissolveBorderTextureOverlay.shader" />
+    <None Include="Assets\SpriteColorFX\Resources\Shaders\Dissolve\SpriteColorDissolveBorderTexturePinLight.shader" />
+    <None Include="Assets\SpriteColorFX\Resources\Shaders\Dissolve\SpriteColorDissolveBorderTextureSaturation.shader" />
+    <None Include="Assets\SpriteColorFX\Resources\Shaders\Dissolve\SpriteColorDissolveBorderTextureScreen.shader" />
+    <None Include="Assets\SpriteColorFX\Resources\Shaders\Dissolve\SpriteColorDissolveBorderTextureSoftLight.shader" />
+    <None Include="Assets\SpriteColorFX\Resources\Shaders\Dissolve\SpriteColorDissolveBorderTextureSolid.shader" />
+    <None Include="Assets\SpriteColorFX\Resources\Shaders\Dissolve\SpriteColorDissolveBorderTextureSubtract.shader" />
+    <None Include="Assets\SpriteColorFX\Resources\Shaders\Dissolve\SpriteColorDissolveBorderTextureVividLight.shader" />
+    <None Include="Assets\SpriteColorFX\Resources\Shaders\Dissolve\SpriteColorDissolveNormal.shader" />
+    <None Include="Assets\SpriteColorFX\Resources\Shaders\Glass\BumpLit\SpriteColorGlassBumpLit.shader" />
+    <None Include="Assets\SpriteColorFX\Resources\Shaders\Glass\SpriteColorGlass.shader" />
+    <None Include="Assets\SpriteColorFX\Resources\Shaders\Instagram\BumpLit\SpriteColorInstagramBumpLit.shader" />
+    <None Include="Assets\SpriteColorFX\Resources\Shaders\Instagram\SpriteColorInstagram.shader" />
+    <None Include="Assets\SpriteColorFX\Resources\Shaders\Masks\BumpLit\SpriteColorMasks3AdditiveBumpLit.shader" />
+    <None Include="Assets\SpriteColorFX\Resources\Shaders\Masks\BumpLit\SpriteColorMasks3BurnBumpLit.shader" />
+    <None Include="Assets\SpriteColorFX\Resources\Shaders\Masks\BumpLit\SpriteColorMasks3ColorBumpLit.shader" />
+    <None Include="Assets\SpriteColorFX\Resources\Shaders\Masks\BumpLit\SpriteColorMasks3DarkenBumpLit.shader" />
+    <None Include="Assets\SpriteColorFX\Resources\Shaders\Masks\BumpLit\SpriteColorMasks3DarkerBumpLit.shader" />
+    <None Include="Assets\SpriteColorFX\Resources\Shaders\Masks\BumpLit\SpriteColorMasks3DifferenceBumpLit.shader" />
+    <None Include="Assets\SpriteColorFX\Resources\Shaders\Masks\BumpLit\SpriteColorMasks3DivideBumpLit.shader" />
+    <None Include="Assets\SpriteColorFX\Resources\Shaders\Masks\BumpLit\SpriteColorMasks3DodgeBumpLit.shader" />
+    <None Include="Assets\SpriteColorFX\Resources\Shaders\Masks\BumpLit\SpriteColorMasks3HardLightBumpLit.shader" />
+    <None Include="Assets\SpriteColorFX\Resources\Shaders\Masks\BumpLit\SpriteColorMasks3HardMixBumpLit.shader" />
+    <None Include="Assets\SpriteColorFX\Resources\Shaders\Masks\BumpLit\SpriteColorMasks3HueBumpLit.shader" />
+    <None Include="Assets\SpriteColorFX\Resources\Shaders\Masks\BumpLit\SpriteColorMasks3LightenBumpLit.shader" />
+    <None Include="Assets\SpriteColorFX\Resources\Shaders\Masks\BumpLit\SpriteColorMasks3LighterBumpLit.shader" />
+    <None Include="Assets\SpriteColorFX\Resources\Shaders\Masks\BumpLit\SpriteColorMasks3LuminosityBumpLit.shader" />
+    <None Include="Assets\SpriteColorFX\Resources\Shaders\Masks\BumpLit\SpriteColorMasks3MultiplyBumpLit.shader" />
+    <None Include="Assets\SpriteColorFX\Resources\Shaders\Masks\BumpLit\SpriteColorMasks3OverlayBumpLit.shader" />
+    <None Include="Assets\SpriteColorFX\Resources\Shaders\Masks\BumpLit\SpriteColorMasks3PinLightBumpLit.shader" />
+    <None Include="Assets\SpriteColorFX\Resources\Shaders\Masks\BumpLit\SpriteColorMasks3SaturationBumpLit.shader" />
+    <None Include="Assets\SpriteColorFX\Resources\Shaders\Masks\BumpLit\SpriteColorMasks3ScreenBumpLit.shader" />
+    <None Include="Assets\SpriteColorFX\Resources\Shaders\Masks\BumpLit\SpriteColorMasks3SoftLightBumpLit.shader" />
+    <None Include="Assets\SpriteColorFX\Resources\Shaders\Masks\BumpLit\SpriteColorMasks3SolidBumpLit.shader" />
+    <None Include="Assets\SpriteColorFX\Resources\Shaders\Masks\BumpLit\SpriteColorMasks3SubtractBumpLit.shader" />
+    <None Include="Assets\SpriteColorFX\Resources\Shaders\Masks\BumpLit\SpriteColorMasks3VividLightBumpLit.shader" />
+    <None Include="Assets\SpriteColorFX\Resources\Shaders\Masks\SpriteColorMasks3Additive.shader" />
+    <None Include="Assets\SpriteColorFX\Resources\Shaders\Masks\SpriteColorMasks3Burn.shader" />
+    <None Include="Assets\SpriteColorFX\Resources\Shaders\Masks\SpriteColorMasks3Color.shader" />
+    <None Include="Assets\SpriteColorFX\Resources\Shaders\Masks\SpriteColorMasks3Darken.shader" />
+    <None Include="Assets\SpriteColorFX\Resources\Shaders\Masks\SpriteColorMasks3Darker.shader" />
+    <None Include="Assets\SpriteColorFX\Resources\Shaders\Masks\SpriteColorMasks3Difference.shader" />
+    <None Include="Assets\SpriteColorFX\Resources\Shaders\Masks\SpriteColorMasks3Divide.shader" />
+    <None Include="Assets\SpriteColorFX\Resources\Shaders\Masks\SpriteColorMasks3Dodge.shader" />
+    <None Include="Assets\SpriteColorFX\Resources\Shaders\Masks\SpriteColorMasks3HardLight.shader" />
+    <None Include="Assets\SpriteColorFX\Resources\Shaders\Masks\SpriteColorMasks3HardMix.shader" />
+    <None Include="Assets\SpriteColorFX\Resources\Shaders\Masks\SpriteColorMasks3Hue.shader" />
+    <None Include="Assets\SpriteColorFX\Resources\Shaders\Masks\SpriteColorMasks3Lighten.shader" />
+    <None Include="Assets\SpriteColorFX\Resources\Shaders\Masks\SpriteColorMasks3Lighter.shader" />
+    <None Include="Assets\SpriteColorFX\Resources\Shaders\Masks\SpriteColorMasks3Luminosity.shader" />
+    <None Include="Assets\SpriteColorFX\Resources\Shaders\Masks\SpriteColorMasks3Multiply.shader" />
+    <None Include="Assets\SpriteColorFX\Resources\Shaders\Masks\SpriteColorMasks3Overlay.shader" />
+    <None Include="Assets\SpriteColorFX\Resources\Shaders\Masks\SpriteColorMasks3PinLight.shader" />
+    <None Include="Assets\SpriteColorFX\Resources\Shaders\Masks\SpriteColorMasks3Saturation.shader" />
+    <None Include="Assets\SpriteColorFX\Resources\Shaders\Masks\SpriteColorMasks3Screen.shader" />
+    <None Include="Assets\SpriteColorFX\Resources\Shaders\Masks\SpriteColorMasks3SoftLight.shader" />
+    <None Include="Assets\SpriteColorFX\Resources\Shaders\Masks\SpriteColorMasks3Solid.shader" />
+    <None Include="Assets\SpriteColorFX\Resources\Shaders\Masks\SpriteColorMasks3Subtract.shader" />
+    <None Include="Assets\SpriteColorFX\Resources\Shaders\Masks\SpriteColorMasks3VividLight.shader" />
+    <None Include="Assets\SpriteColorFX\Resources\Shaders\Outline\BumpLit\SpriteColorOutlineBumpLit.shader" />
+    <None Include="Assets\SpriteColorFX\Resources\Shaders\Outline\BumpLit\SpriteColorOutlineGradientHorizontalBumpLit.shader" />
+    <None Include="Assets\SpriteColorFX\Resources\Shaders\Outline\BumpLit\SpriteColorOutlineGradientHorizontalMaskBumpLit.shader" />
+    <None Include="Assets\SpriteColorFX\Resources\Shaders\Outline\BumpLit\SpriteColorOutlineGradientVerticalBumpLit.shader" />
+    <None Include="Assets\SpriteColorFX\Resources\Shaders\Outline\BumpLit\SpriteColorOutlineGradientVerticalMaskBumpLit.shader" />
+    <None Include="Assets\SpriteColorFX\Resources\Shaders\Outline\BumpLit\SpriteColorOutlineMaskBumpLit.shader" />
+    <None Include="Assets\SpriteColorFX\Resources\Shaders\Outline\BumpLit\SpriteColorOutlineNoOverlapBumpLit.shader" />
+    <None Include="Assets\SpriteColorFX\Resources\Shaders\Outline\BumpLit\SpriteColorOutlineNoOverlapGradientHorizontalBumpLit.shader" />
+    <None Include="Assets\SpriteColorFX\Resources\Shaders\Outline\BumpLit\SpriteColorOutlineNoOverlapGradientHorizontalMaskBumpLit.shader" />
+    <None Include="Assets\SpriteColorFX\Resources\Shaders\Outline\BumpLit\SpriteColorOutlineNoOverlapGradientVerticalBumpLit.shader" />
+    <None Include="Assets\SpriteColorFX\Resources\Shaders\Outline\BumpLit\SpriteColorOutlineNoOverlapGradientVerticalMaskBumpLit.shader" />
+    <None Include="Assets\SpriteColorFX\Resources\Shaders\Outline\BumpLit\SpriteColorOutlineNoOverlapMaskBumpLit.shader" />
+    <None Include="Assets\SpriteColorFX\Resources\Shaders\Outline\BumpLit\SpriteColorOutlineNoOverlapTextureBumpLit.shader" />
+    <None Include="Assets\SpriteColorFX\Resources\Shaders\Outline\BumpLit\SpriteColorOutlineNoOverlapTextureMaskBumpLit.shader" />
+    <None Include="Assets\SpriteColorFX\Resources\Shaders\Outline\BumpLit\SpriteColorOutlineTextureBumpLit.shader" />
+    <None Include="Assets\SpriteColorFX\Resources\Shaders\Outline\BumpLit\SpriteColorOutlineTextureMaskBumpLit.shader" />
+    <None Include="Assets\SpriteColorFX\Resources\Shaders\Outline\SpriteColorOutline.shader" />
+    <None Include="Assets\SpriteColorFX\Resources\Shaders\Outline\SpriteColorOutlineGradientHorizontal.shader" />
+    <None Include="Assets\SpriteColorFX\Resources\Shaders\Outline\SpriteColorOutlineGradientHorizontalMask.shader" />
+    <None Include="Assets\SpriteColorFX\Resources\Shaders\Outline\SpriteColorOutlineGradientVertical.shader" />
+    <None Include="Assets\SpriteColorFX\Resources\Shaders\Outline\SpriteColorOutlineGradientVerticalMask.shader" />
+    <None Include="Assets\SpriteColorFX\Resources\Shaders\Outline\SpriteColorOutlineMask.shader" />
+    <None Include="Assets\SpriteColorFX\Resources\Shaders\Outline\SpriteColorOutlineNoOverlap.shader" />
+    <None Include="Assets\SpriteColorFX\Resources\Shaders\Outline\SpriteColorOutlineNoOverlapGradientHorizontal.shader" />
+    <None Include="Assets\SpriteColorFX\Resources\Shaders\Outline\SpriteColorOutlineNoOverlapGradientHorizontalMask.shader" />
+    <None Include="Assets\SpriteColorFX\Resources\Shaders\Outline\SpriteColorOutlineNoOverlapGradientVertical.shader" />
+    <None Include="Assets\SpriteColorFX\Resources\Shaders\Outline\SpriteColorOutlineNoOverlapGradientVerticalMask.shader" />
+    <None Include="Assets\SpriteColorFX\Resources\Shaders\Outline\SpriteColorOutlineNoOverlapMask.shader" />
+    <None Include="Assets\SpriteColorFX\Resources\Shaders\Outline\SpriteColorOutlineNoOverlapTexture.shader" />
+    <None Include="Assets\SpriteColorFX\Resources\Shaders\Outline\SpriteColorOutlineNoOverlapTextureMask.shader" />
+    <None Include="Assets\SpriteColorFX\Resources\Shaders\Outline\SpriteColorOutlineTexture.shader" />
+    <None Include="Assets\SpriteColorFX\Resources\Shaders\Outline\SpriteColorOutlineTextureMask.shader" />
+    <None Include="Assets\SpriteColorFX\Resources\Shaders\Ramp\BumpLit\SpriteColorRampBumpLit.shader" />
+    <None Include="Assets\SpriteColorFX\Resources\Shaders\Ramp\BumpLit\SpriteColorRampMaskBumpLit.shader" />
+    <None Include="Assets\SpriteColorFX\Resources\Shaders\Ramp\SpriteColorRamp.shader" />
+    <None Include="Assets\SpriteColorFX\Resources\Shaders\Ramp\SpriteColorRampMask.shader" />
+    <None Include="Assets\SpriteColorFX\Resources\Shaders\Shift\BumpLit\SpriteColorShiftLinearBumpLit.shader" />
+    <None Include="Assets\SpriteColorFX\Resources\Shaders\Shift\BumpLit\SpriteColorShiftRadialBumpLit.shader" />
+    <None Include="Assets\SpriteColorFX\Resources\Shaders\Shift\SpriteColorShiftLinear.shader" />
+    <None Include="Assets\SpriteColorFX\Resources\Shaders\Shift\SpriteColorShiftRadial.shader" />
+    <None Include="Assets\SpriteColorFX\Resources\Shaders\SpriteColorFXCG.cginc" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Target Name="GenerateTargetFrameworkMonikerAttribute" />
+</Project>
